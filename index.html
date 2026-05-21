@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aperion Labs – Engineered for Tomorrow. Modernste Technologielösungen für die Zukunft." />
+  <title>Aperion Labs – Engineered for Tomorrow</title>
+  <link rel="icon" href="assets/Aperion_Labs_Logo.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-180x180.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="assets/images/Aperion_Labs_Logo_Quer.png" alt="Aperion Labs" />
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">Über uns</a>
+        <a href="#services">Leistungen</a>
+        <a href="#why-us">Vorteile</a>
+        <a href="#tech">Technologien</a>
+        <a href="#contact" class="btn-nav">Kontakt</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Tech Startup · Innovation
+      </div>
+      <h1 class="hero-title">
+        Engineered<br />
+        <span class="gradient-text">for Tomorrow.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Wir entwickeln zukunftsweisende Technologielösungen, die Unternehmen
+        transformieren und die Welt von morgen gestalten.
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn-primary">Unsere Leistungen</a>
+        <a href="#contact" class="btn-ghost">Jetzt kontaktieren</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="50">0</span><span>+</span>
+          <span class="stat-label">Projekte</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="98">0</span><span>%</span>
+          <span class="stat-label">Kundenzufriedenheit</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="24">0</span><span>/7</span>
+          <span class="stat-label">Support</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-logo-glow">
+        <img src="assets/images/Aperion_Labs_Logo_512_Transparent.png" alt="Aperion Labs Logo" class="hero-logo-img" />
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label">Über Aperion Labs</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Technologie, die<br /><span class="gradient-text">Grenzen verschiebt.</span></h2>
+          <p>Aperion Labs ist ein innovatives Tech-Startup mit dem Fokus auf modernste Softwareentwicklung, KI-gestützte Lösungen und digitale Transformation. Unser Team aus erfahrenen Ingenieuren und Visionären entwickelt Produkte, die nicht nur heutige Anforderungen erfüllen, sondern zukünftige Möglichkeiten erschließen.</p>
+          <p>Wir glauben daran, dass die besten Lösungen an der Schnittstelle von tiefem technischen Know-how und echtem Nutzerverständnis entstehen.</p>
+          <div class="about-values">
+            <div class="value-item">
+              <div class="value-icon">◆</div>
+              <div>
+                <strong>Innovation First</strong>
+                <span>Wir denken über den Status quo hinaus</span>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">◆</div>
+              <div>
+                <strong>Qualität ohne Kompromisse</strong>
+                <span>Jede Zeile Code, jede Entscheidung mit Sorgfalt</span>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">◆</div>
+              <div>
+                <strong>Nachhaltig skalierbar</strong>
+                <span>Architekturen für die nächsten 10 Jahre</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-card glass-card">
+            <div class="about-card-icon">🚀</div>
+            <h3>Mission</h3>
+            <p>Durch Technologie reale Probleme lösen und Unternehmen befähigen, in einer digitalen Welt zu führen.</p>
+          </div>
+          <div class="about-card glass-card about-card-offset">
+            <div class="about-card-icon">🔭</div>
+            <h3>Vision</h3>
+            <p>Eine Welt, in der intelligente Systeme menschliches Potenzial entfalten, nicht ersetzen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-label">Was wir tun</div>
+      <h2 class="section-title centered">Unsere <span class="gradient-text">Leistungen</span></h2>
+      <p class="section-subtitle">Von der Idee bis zur Skalierung – wir begleiten Ihr Projekt durch jeden Schritt.</p>
+      <div class="services-grid">
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3>Software Engineering</h3>
+          <p>Maßgeschneiderte Softwarelösungen von der Anforderungsanalyse bis zum Live-Betrieb. Skalierbar, sicher, wartbar.</p>
+          <ul class="service-features">
+            <li>Web- & Mobile-Applikationen</li>
+            <li>API-Design & Microservices</li>
+            <li>Cloud-Native Architekturen</li>
+          </ul>
+        </div>
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>KI & Machine Learning</h3>
+          <p>Intelligente Systeme, die aus Daten lernen und Entscheidungsprozesse automatisieren und optimieren.</p>
+          <ul class="service-features">
+            <li>Predictive Analytics</li>
+            <li>NLP & Computer Vision</li>
+            <li>LLM-Integration & Fine-Tuning</li>
+          </ul>
+        </div>
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+          </div>
+          <h3>Cloud & DevOps</h3>
+          <p>Moderne Infrastrukturen auf AWS, Azure oder GCP. Automatisierte Pipelines für schnelle, sichere Deployments.</p>
+          <ul class="service-features">
+            <li>Cloud-Migration & Optimierung</li>
+            <li>CI/CD Pipelines</li>
+            <li>Infrastructure as Code</li>
+          </ul>
+        </div>
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3>Data Engineering</h3>
+          <p>Robuste Datenpipelines und analytische Plattformen, die aus rohen Daten wertvolle Erkenntnisse machen.</p>
+          <ul class="service-features">
+            <li>Data Warehouse & Lake</li>
+            <li>Real-Time Streaming</li>
+            <li>BI-Dashboards & Reporting</li>
+          </ul>
+        </div>
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          </div>
+          <h3>Cybersecurity</h3>
+          <p>Proaktiver Schutz Ihrer digitalen Assets. Penetrationstests, Sicherheitsaudits und Security-by-Design.</p>
+          <ul class="service-features">
+            <li>Penetration Testing</li>
+            <li>Security Architecture</li>
+            <li>Compliance & Audits</li>
+          </ul>
+        </div>
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3>Tech Consulting</h3>
+          <p>Strategische Technologieberatung für Startups und Unternehmen. Roadmaps, Architekturentscheidungen, Team-Aufbau.</p>
+          <ul class="service-features">
+            <li>Technologie-Strategie</li>
+            <li>CTO-as-a-Service</li>
+            <li>Due Diligence</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY US ========== -->
+  <section class="why-us" id="why-us">
+    <div class="container">
+      <div class="section-label">Warum Aperion Labs</div>
+      <h2 class="section-title centered">Der <span class="gradient-text">Unterschied</span>, der zählt.</h2>
+      <div class="why-grid">
+        <div class="why-item reveal">
+          <div class="why-number">01</div>
+          <h3>Deep Tech Expertise</h3>
+          <p>Unser Team vereint jahrelange Erfahrung in den neuesten Technologien – von KI über Quantencomputing bis hin zu Edge Computing.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-number">02</div>
+          <h3>Agile Execution</h3>
+          <p>Schnelle Iteration, transparente Kommunikation und eine enge Zusammenarbeit mit unseren Kunden von Tag eins an.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-number">03</div>
+          <h3>Future-Proof Design</h3>
+          <p>Wir bauen keine Lösungen für heute. Wir entwerfen Systeme, die mit Ihren Anforderungen mitwachsen.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-number">04</div>
+          <h3>Full Ownership</h3>
+          <p>Von der ersten Zeile Code bis zum produktiven Betrieb – wir übernehmen vollständige Verantwortung für Ihr Projekt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECH STACK ========== -->
+  <section class="tech-section" id="tech">
+    <div class="container">
+      <div class="section-label">Technologie-Stack</div>
+      <h2 class="section-title centered">Best-in-class <span class="gradient-text">Tools & Technologien</span></h2>
+      <div class="tech-categories">
+        <div class="tech-category reveal">
+          <h4>Frontend</h4>
+          <div class="tech-tags">
+            <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Tailwind</span><span class="tag">Vue.js</span>
+          </div>
+        </div>
+        <div class="tech-category reveal">
+          <h4>Backend</h4>
+          <div class="tech-tags">
+            <span class="tag">Node.js</span><span class="tag">Python</span><span class="tag">Go</span><span class="tag">Rust</span><span class="tag">GraphQL</span>
+          </div>
+        </div>
+        <div class="tech-category reveal">
+          <h4>KI / ML</h4>
+          <div class="tech-tags">
+            <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">OpenAI</span><span class="tag">Langchain</span><span class="tag">HuggingFace</span>
+          </div>
+        </div>
+        <div class="tech-category reveal">
+          <h4>Cloud & Infra</h4>
+          <div class="tech-tags">
+            <span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">GCP</span><span class="tag">Kubernetes</span><span class="tag">Terraform</span>
+          </div>
+        </div>
+        <div class="tech-category reveal">
+          <h4>Datenbanken</h4>
+          <div class="tech-tags">
+            <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Redis</span><span class="tag">Snowflake</span><span class="tag">ClickHouse</span>
+          </div>
+        </div>
+        <div class="tech-category reveal">
+          <h4>DevOps</h4>
+          <div class="tech-tags">
+            <span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">ArgoCD</span><span class="tag">Grafana</span><span class="tag">Datadog</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-label">Kontakt</div>
+          <h2 class="section-title">Bereit für<br /><span class="gradient-text">morgen?</span></h2>
+          <p>Haben Sie ein Projekt, eine Idee oder eine Herausforderung? Wir freuen uns darauf, mit Ihnen zu sprechen.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <strong>E-Mail</strong>
+                <span>hello@aperionlabs.io</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <strong>Standort</strong>
+                <span>Deutschland</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form class="contact-form glass-card" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Ihr Name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" placeholder="ihre@email.de" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Betreff</label>
+              <input type="text" id="subject" name="subject" placeholder="Worum geht es?" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" rows="5" placeholder="Beschreiben Sie Ihr Projekt oder Ihre Anfrage..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <span>Nachricht senden</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              Vielen Dank! Wir melden uns so bald wie möglich.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/Aperion_Labs_Logo_Quer.png" alt="Aperion Labs" class="footer-logo" />
+          <p>Engineered for Tomorrow.</p>
+          <p class="footer-tagline">Wir bauen die Technologie,<br />die die Welt von morgen gestaltet.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Unternehmen</h5>
+          <a href="#about">Über uns</a>
+          <a href="#services">Leistungen</a>
+          <a href="#why-us">Vorteile</a>
+          <a href="#tech">Technologien</a>
+        </div>
+        <div class="footer-links">
+          <h5>Leistungen</h5>
+          <a href="#services">Software Engineering</a>
+          <a href="#services">KI & Machine Learning</a>
+          <a href="#services">Cloud & DevOps</a>
+          <a href="#services">Tech Consulting</a>
+        </div>
+        <div class="footer-links">
+          <h5>Kontakt</h5>
+          <a href="mailto:hello@aperionlabs.io">hello@aperionlabs.io</a>
+          <a href="#contact">Kontaktformular</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aperion Labs. Alle Rechte vorbehalten.</p>
+        <div class="footer-legal">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
